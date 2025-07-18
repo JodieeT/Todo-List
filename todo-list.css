@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darksalmon;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    font-size: 70px;
+}
+
+#input {
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 10px 10px;
+    caret-color: brown;
+    border-bottom: none;
+}
+
+#input::placeholder {
+    color: lightsalmon;
+}
+
+#input:focus {
+    outline: none;
+    border: 2px solid brown;
+}
+
+#description {
+    color: indianred;
+}
+
+#input, #list {
+    width: 30%;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+#list {
+    list-style: none;
+}
+
+#list li {
+    background-color: lightsalmon;
+    border: 1px solid brown;
+    text-align: center;
+    font-size: 24px;
+    color: brown;
+    padding: 10px 10px;
+}
+
+#list li.completed {
+    text-decoration: line-through;
+    color: brown;
+}
